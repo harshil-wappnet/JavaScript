@@ -1,0 +1,5 @@
+Hello, this is the file that contains information about the ajax.<br>
+Ajax is asynchronous javascript and xml.<br>
+Welcome to lecture 01 of ajax
+<br>
+Hello, I am your tutor.
