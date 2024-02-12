@@ -12,13 +12,14 @@ function showInput() {
         }
         if (myButton.innerText == "Clicked") {
             myButton.onclick = function () {
-                alert('You clicked on the button and entered: ' + inputField.value);
+                alert('You clicked on the button and entered: ' + localStorage.getItem("userInput"));
                 // inputField.hidden = true;
             }
         }
     }
     inputField.addEventListener("blur", function () {
-        alert('You clicked on the button and entered: ' + inputField.value);
+        localStorage.setItem("userInput", inputField.value);
+        alert('You clicked on the button and entered: ' + localStorage.getItem("userInput"));
     })
 }
 showInput();
